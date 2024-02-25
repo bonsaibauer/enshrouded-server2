@@ -1,7 +1,7 @@
 #
 # Enshrouded server Dockerfile
 #
-# https://github.com/
+# https://github.com/bonsaibauer/enshrouded-server/blob/main/Dockerfile
 #
 
 # Pull base image.
