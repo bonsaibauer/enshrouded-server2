@@ -11,3 +11,14 @@ docker run
   -p 15637:15637/udp \
   -d --name enshrouded-server-instance --restart always enshrouded-server:v1.0
 ```
+# Docker Neustart um 4 Uhr in der Nacht (Performance)
+```
+sudo timedatectl set-timezone Europe/Berlin
+```
+```
+crontab -e
+```
+## Füge ein:
+```
+0 4 * * * /usr/bin/docker restart enshrouded-server-instance
+```
