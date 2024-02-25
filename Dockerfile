@@ -9,7 +9,7 @@ FROM debian:latest
 
 MAINTAINER bonsaibauer < mail@philippfeierabend.de >
 
-ENV ENSHROUDED_VERSION 1.0.0
+ENV ENSHROUDED_VERSION 0.0.0
 
 # Update & install packages
 RUN dpkg --add-architecture i386 && \
