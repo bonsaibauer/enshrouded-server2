@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM ubuntu:latest
+FROM debian:latest
 
 MAINTAINER bonsaibauer < mail@philippfeierabend.de >
 
