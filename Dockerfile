@@ -40,4 +40,10 @@ WORKDIR /home/enshrouded/steam/enshrouded
 
 COPY enshrouded_server.json /home/enshrouded/steam/enshrouded/enshrouded_server.json
 
+# Define volume for savegame
+VOLUME ["/var/www/gameserver/enshrouded-server/savegame"]
+
+# Update CMD to use the mounted volume for savegame
+CMD ["sh", "-c", "ln -s /var/www/gameserver/enshrouded-server/savegame ./savegame && wine64 enshrouded_server.exe"]
+
 CMD wine64 enshrouded_server.exe
